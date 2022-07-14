@@ -6,7 +6,7 @@ body {font-family: 'Roboto', arial,sans-serif;}
 .user ul li:first-child a {margin-right: 15px;}
 .user ul li:nth-child(2) a {margin-right: 23px;}
 .user ul li a {color: #000000de;}
-.user ul li a svg {width: 20px; height: 20px; opacity: 1; vertical-align: middle;}
+.user ul li a img {width: 20px; opacity: .95;}
 .user ul li .girisyap {display: inline-block; font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif; cursor: pointer; background: #1a73e8; color: #fff; border: 1px solid transparent; font-size: 14px; letter-spacing: 0.25px; line-height: 16px; font-weight: 500; text-align: center; border-radius: 4px; padding: 9px 23px; vertical-align: middle; margin-left: 20px;}
 
 @media (min-width: 992px) {
