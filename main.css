@@ -1,0 +1,60 @@
+body {font-family: 'Roboto', arial,sans-serif;}
+/* Header */
+.user {display: flex; justify-content: flex-end; padding: 6px;}
+.user ul {margin: 0; padding: 0; padding: 8px 4px 8px 0;}
+.user ul li {list-style-type: none; display: inline-block; vertical-align: middle;}
+.user ul li:first-child a {margin-right: 15px;}
+.user ul li:nth-child(2) a {margin-right: 23px;}
+.user ul li a {color: #000000de;}
+.user ul li a svg {width: 20px; height: 20px; opacity: 1; vertical-align: middle;}
+.user ul li .girisyap {display: inline-block; font-family: Google Sans,Roboto,Helvetica,Arial,sans-serif; cursor: pointer; background: #1a73e8; color: #fff; border: 1px solid transparent; font-size: 14px; letter-spacing: 0.25px; line-height: 16px; font-weight: 500; text-align: center; border-radius: 4px; padding: 9px 23px; vertical-align: middle; margin-left: 20px;}
+
+@media (min-width: 992px) {
+    .user ul li .girisyap:hover {background: #2b7de9; box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%); text-decoration: none;}
+    .user ul li .girisyap:focus {background: #5094ed; box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%), 0 1px 3px 1px rgb(66 133 244 / 15%);}
+}
+
+/* Search */
+.main .img {text-align: center;}
+.main .search-place {text-align: center; padding: 20px;}
+.main .search-place .search {display: inline-block; width: 584px; height: 44px; border: 1px solid #dfe1e5; border-radius: 24px;}
+.main .search-place .search svg {width: 20px; fill: #9aa0a6; display: inline-block; float: left; margin: 11px 0 11px 16px;}
+.main .search-place .search input {border: none; height: 34px; margin: 5px 0; width: 85%;}
+.main .search-place .search input:focus-visible {outline: none;}
+.main .search-place .search .voice {display: inline-block; float: right; position: relative; padding-right: 12px;}
+.main .search-place .search .voice img {width: 24px; float: right; padding: 9px 0; cursor: pointer;}
+.main .search-place .search .voiceText {display: none; position: absolute; width: 125px; border: 1px solid #f2f2f2; background: #fff; bottom: -32px; left: 50%; margin-left: -62.5px; padding: 5px 10px; font-size: 12px; font-weight: bold; color: #70757a;}
+.main .search-place .search .voiceText::before {content: ''; width: 0; height: 0; border-style: solid; border-width: 0 5px 7px 5px; background: #fff; border-color: transparent transparent transparent transparent; top: -6px; position: absolute; left: 50%; margin-left: -10px; z-index: 1;}
+.main .search-place .search .voiceText:After {content: ''; width: 0; height: 0; border-style: solid; border-width: 0 6px 8px 6px; border-color: transparent transparent #f2f2f2 transparent; top: -8px; position: absolute; left: 50%; margin-left: -10px;}
+.main .search-place .buttons {margin-top: 18px;}
+.main .search-place .buttons button {background-color: #f8f9fa; border: 1px solid #f8f9fa; border-radius: 4px; color: #3c4043; font-family: arial,sans-serif; font-size: 14px; text-align: center; cursor: pointer; margin: 11px 4px; padding: 0 16px; line-height: 27px; height: 36px; min-width: 54px;}
+
+@media (min-width: 992px) {
+    .main .search-place .search:hover {box-shadow: 0 1px 6px rgb(32 33 36 / 28%); border-color: rgba(223,225,229,0);}
+    .main .search-place .buttons button:hover {box-shadow: 0 1px 1px rgb(0 0 0 / 10%); background-color: #f8f9fa; border: 1px solid #dadce0; color: #202124;}
+    .main .search-place .buttons button:focus {border: 1px solid #4285f4; outline: none;}
+    .main .search-place .search .voice img:hover ~ .voiceText {display: block;}
+}
+
+/* Footer */
+footer {position: absolute; right: 0; left: 0; bottom: 0;}
+footer .location {color: #70757a; border-bottom: 1px solid #dadce0; background-color: #f2f2f2; padding: 15px 30px; font-size: 15px;}
+footer .menu {background-color: #f2f2f2; display: flex; justify-content: space-between; padding: 15px 20px;}
+footer .menu ul {padding: 0; margin: 0; display: flex; min-width: 30%;}
+footer .menu ul li {list-style-type: none;}
+footer .menu ul li a {padding: 15px; color: #70757a;}
+footer .menu .menuright {justify-content: flex-end;}
+footer .menu .info {color: #70757a;}
+footer .menu .info img {height: 14px; margin-right: 6px; margin-top: -3px;}
+
+.infodiv {display: flex; justify-content: center; background: #f2f2f2;}
+.infodiv a {color: #70757a; padding: 15px;}
+.infodiv a img {height: 14px; margin-right: 6px; margin-top: -3px;}
+
+@media (min-width: 1201px) {
+    .infodiv {display: none;}
+}
+@media (max-width: 1200px) {
+    footer .info {display: none;}
+    footer .menu {justify-content: space-evenly;}
+}
